@@ -1,0 +1,34 @@
+main {
+
+}
+
+footer {
+    min-height: 15vh;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.bg-picture {
+    min-height: 100vh;
+    background-image: url('https://markohnsman.github.io/img/header.jpg');
+    background-size: cover;
+}
+
+.img-link {
+    position: absolute;
+    z-index: -1;
+}
+
+.img-link::after {
+    background-color: blue;
+}
+
+.img-link:hover {
+    background-color: red;
+}
+
+
+/* positionabsolute
+pseudoclass after */
