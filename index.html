@@ -31,41 +31,61 @@
 
 <body class="debug">
 
-    <header class="bg-dark">
+    
+    <header class="bg-dark navbar-size">
         <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#there">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bg-light" href="#there">Disabled</a>
-            </li>
             
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-              <ul class="dropdown-menu bg-danger ">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
+
+            <div class="col-9">
+                <li class="nav-item">
+                    <h3 class="text-light fw-bold shadow">Cheese</h3>
+                </li>
+            </div>
+                
+
+            <div class="col-1 bg-light rounded-3">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#there">Link</a>
+                </li>
+            </div>
+            <div class="col-1 bg-light rounded-3">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#there">Disabled</a>
+                </li>
+            </div>
+                
+
+            <div class="col-1 bg-light rounded-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu bg-light ">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </div>
+
+        </ul>
+        
     </header>
 
 
 
     <main class="bg-dark">
+
         <div class="row justify-content-center align-items-center bg-picture">
             <div class="col-8 text-center h-15">
-                <h1 class="text-light text-center text-shadow fw-bold mb-4">Test Site 1</h1>
-                <a class="text-white btn btn-danger rounded-pill fw-bold p-2 px-4" href="#hello">Learn More</a>
+                
             </div>
         </div>
+        <div class="bg-text">
+            <h1 class="text-light text-center text-shadow fw-bold mb-4">Test Site 1</h1>
+            <a class="text-white btn btn-danger rounded-pill fw-bold p-2 px-4" href="#hello">Learn More</a>
+        </div>
+
 
         <div id="hello" class="row justify-content-center text-danger bg-warning">
             <div class="col-4">
@@ -92,22 +112,28 @@
             </div>
         </div>
 
-        <div class="row justify-content-center bg-dark">
+<!-- NOTE Stupid Picture Hover Thing
+
+        <div class="row justify-content-center bg-light">
             <div class="col-12 text-center">
                 <div class="row">
 
-                    <div class="col">
-                        <a class="" href="#">
-                            <img class="img-fluid" src="https://markohnsman.github.io/img/portfolio/thumbnails/6.jpg" alt="WoodStuff">
-                        </a>
-                        <div class="text-center text-warning">
-                            <h3>Hello</h3>
+                    <div>
+                        <div class="col">
+                            <a class="" href="#">
+                                <img class="img-fluid img-link" src="https://markohnsman.github.io/img/portfolio/thumbnails/6.jpg" alt="WoodStuff">
+                            </a>
+                            <div class="row justify-content-center align-items-center text-center text-warning txt-link rectangle">
+                                <h3>Hello</h3>
+                            </div>
                         </div>
                     </div>
-
+                    
                 </div>
             </div>
         </div>
+
+-->
     </main>
 
 

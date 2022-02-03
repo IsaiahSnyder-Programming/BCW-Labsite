@@ -1,34 +1,82 @@
-main {
+:root {
+    --black: rgb(0, 0, 0);
+    --black-opaque: rgba(0, 0, 0, 0.4);
+    --white: rgb(255, 255, 255);
+}
 
+main {
+    min-height: 15vh;
 }
 
 footer {
-    min-height: 15vh;
+    min-height: 5rem;
 }
 
 .d-flex {
     display: flex;
 }
 
+.navbar-size {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.button-padding a {
+    padding-left: 30vw;
+    padding-right: 30vw;
+}
+
+.dropdown-padding {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
 .bg-picture {
     min-height: 100vh;
-    background-image: url('https://markohnsman.github.io/img/header.jpg');
+    background-image: url('https://d1jie5o4kjowzg.cloudfront.net/multiple-story-images/shutterstock_1628876074.jpg?cLd0MpWx0UVFYQEO_b5lr_2qFNYSzGgs');
     background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.bg-text {
+    background-color: var(--black);
+    background-color: var(--black-opaque);
+    color: var(--white);
+    font-weight: bold;
+    border: 3px solid var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.rectangle {
+    width: 33vw;
+    height: 20vw;
+    background-color: rgba(250, 200, 150, 0.8);;
 }
 
 .img-link {
-    position: absolute;
-    z-index: -1;
-}
-
-.img-link::after {
-    background-color: blue;
+    position: static;
+    z-index: 0;
 }
 
 .img-link:hover {
+    position: static;
+    z-index: 1;
     background-color: red;
+    box-shadow: 0px 0px 32px blue;
 }
 
+.txt-link {
+    position: static;
+    z-index: 2;
+}
 
 /* positionabsolute
 pseudoclass after */
